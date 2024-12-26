@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>特定类型的电影</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>您选择的类型的电影</h1>
+    <ul class="movie-list-container">
+        {% for movie in genre_movies %}
+        <li>{{ movie }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">返回首页</a>
+</body>
+</html>

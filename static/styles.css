@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f0f0f0;
+    background-image: url('background.jpg'); /* 添加背景图片 */
+    background-size: cover;
+    /*background-repeat:repeat-x;*/
+    color: #333;
+}
+
+h1 {
+    margin-top: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+form {
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+input[type="text"] {
+    padding: 5px;
+    width: 200px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 5px 15px;
+    border-radius: 4px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+    margin-top: 20px;
+    display: block;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.result-list {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.result-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.result-list li {
+    margin: 5px 0;
+    padding: 5px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+}
+
+.movie-list-container {
+            max-height: 80vh; /* 设置最大高度为视口高度的80% */
+            overflow-y: auto; /* 允许垂直滚动 */
+            margin-bottom: 20px; /* 为底部元素留出空间 */
+            padding: 10px; /* 可选：为容器添加内边距 */
+            border: 1px solid #ccc; /* 可选：为容器添加边框 */
+            background-color: rgba(255, 255, 255, 0.3); /* 添加半透明白色背景 */
+}
+
+ol li {
+    color: white; /* 将文字颜色设置为白色 */
+}
+
+ul li {
+    color: white; /* 将文字颜色设置为白色 */
+}

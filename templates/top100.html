@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>评分最高的100部电影</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>评分最高的100部电影</h1>
+    <div class="movie-list-container"> <!-- 添加容器 -->
+        <ol>
+            {% for movie in top_movies %}
+                    <li>{{ movie[0] }} - 评分: {{ "%.2f" | format(movie[1]) }}</li>
+                {% endfor %}
+        </ol>
+    </div> <!-- 结束容器 -->
+    <a href="/">返回首页</a>
+</body>
+</html>

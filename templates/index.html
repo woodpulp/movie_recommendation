@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电影推荐系统</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>欢迎使用电影推荐系统</h1>
+    <br>
+    <br>
+    <a href="/top100">查看评分最高的100部电影</a>
+    <br>
+    <br>
+    <form action="/recommend" method="POST">
+        <label for="user_id">请输入您的用户ID:</label>
+        <input type="number" id="user_id" name="user_id" required>
+        <button type="submit">推荐电影</button>
+    </form>
+    <br>
+    <br>
+    <br>
+    <form action="/genre_recommendations" method="get">
+        <label for="genre">请输入想观看电影类型:</label>
+        <input type="text" id="genre" name="genre">
+        <button type="submit">查找电影</button>
+    </form>
+</body>
+</html>
